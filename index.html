@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>お店のホームページサンプル | 制作見本</title>
+<meta name="description" content="小さなお店・個人事業主向けのホームページ制作サンプルです。">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container header-inner">
+    <div class="logo">〇〇店</div>
+    <nav class="nav" id="nav">
+      <a href="#about">お店について</a>
+      <a href="#menu">メニュー</a>
+      <a href="#voice">お客様の声</a>
+      <a href="#access">アクセス</a>
+      <a href="#contact">お問い合わせ</a>
+    </nav>
+    <button class="nav-toggle" id="navToggle" aria-label="メニューを開く">☰</button>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="container hero-inner">
+    <p class="hero-eyebrow">SAMPLE WEBSITE</p>
+    <h1>心をこめて、<br>あなたのための一皿を。</h1>
+    <p class="hero-lead">地元の食材を使った、あたたかい料理をご提供しています。</p>
+    <a href="#contact" class="btn btn-primary">お問い合わせはこちら</a>
+  </div>
+</section>
+
+<section id="about" class="section">
+  <div class="container">
+    <h2 class="section-title">お店について</h2>
+    <p class="section-lead">
+      2020年の開業以来、地域のお客様に愛される場所を目指してきました。
+      季節ごとの食材を活かした料理と、落ち着いた空間で、
+      特別な日にも、いつもの一日にも寄り添うお店です。
+    </p>
+    <div class="feature-grid">
+      <div class="feature-card">
+        <h3>こだわりの食材</h3>
+        <p>地元の生産者から仕入れた、新鮮な食材のみを使用しています。</p>
+      </div>
+      <div class="feature-card">
+        <h3>落ち着いた空間</h3>
+        <p>ゆったりとくつろげる、あたたかみのある内装です。</p>
+      </div>
+      <div class="feature-card">
+        <h3>丁寧な接客</h3>
+        <p>お一人お一人に、心を込めて対応いたします。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="menu" class="section section-alt">
+  <div class="container">
+    <h2 class="section-title">メニュー</h2>
+    <div class="menu-grid">
+      <div class="menu-card">
+        <h3>本日のランチ</h3>
+        <p class="menu-price">¥1,200</p>
+        <p>日替わりのメイン料理とスープ、サラダ、ドリンク付き。</p>
+      </div>
+      <div class="menu-card">
+        <h3>季節のコース</h3>
+        <p class="menu-price">¥3,800</p>
+        <p>旬の食材を使った前菜からデザートまでの全5品。</p>
+      </div>
+      <div class="menu-card">
+        <h3>お持ち帰りセット</h3>
+        <p class="menu-price">¥1,500</p>
+        <p>ご自宅でも楽しめる、人気メニューの詰め合わせ。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="voice" class="section">
+  <div class="container">
+    <h2 class="section-title">お客様の声</h2>
+    <div class="voice-grid">
+      <blockquote class="voice-card">
+        <p>「料理はもちろん、店員さんの対応もとてもあたたかく、また来たいと思いました。」</p>
+        <cite>― 30代女性</cite>
+      </blockquote>
+      <blockquote class="voice-card">
+        <p>「季節のコースが本当に美味しくて感動しました。特別な日に利用しています。」</p>
+        <cite>― 40代男性</cite>
+      </blockquote>
+    </div>
+  </div>
+</section>
+
+<section id="access" class="section section-alt">
+  <div class="container">
+    <h2 class="section-title">アクセス</h2>
+    <div class="access-grid">
+      <div class="access-info">
+        <p><strong>住所</strong><br>〇〇県〇〇市〇〇 1-2-3</p>
+        <p><strong>営業時間</strong><br>11:00〜15:00 / 17:00〜22:00(月曜定休)</p>
+        <p><strong>電話番号</strong><br>000-0000-0000</p>
+      </div>
+      <div class="access-map">
+        <p>地図はこちらに表示されます</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="section">
+  <div class="container">
+    <h2 class="section-title">お問い合わせ</h2>
+    <p class="section-lead">ご予約・ご質問はお気軽にお問い合わせください。</p>
+    <form class="contact-form" onsubmit="return false;">
+      <label>
+        お名前
+        <input type="text" name="name" placeholder="山田 太郎">
+      </label>
+      <label>
+        メールアドレス
+        <input type="email" name="email" placeholder="example@example.com">
+      </label>
+      <label>
+        お問い合わせ内容
+        <textarea name="message" rows="5" placeholder="ご予約希望日時やご質問内容をご記入ください"></textarea>
+      </label>
+      <button type="submit" class="btn btn-primary">送信する(サンプルのため送信されません)</button>
+    </form>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container">
+    <p>※このサイトはホームページ制作サンプルです。実在の店舗・情報ではありません。</p>
+    <p>&copy; 2026 Homepage Sample</p>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
