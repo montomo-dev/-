@@ -1,8 +1,10 @@
 :root {
   --color-bg: #faf7f2;
   --color-text: #2e2b28;
-  --color-primary: #b5652f;
-  --color-primary-dark: #8f4f24;
+  /* 主色は白文字・文字色の両方で 4.5:1 以上になるよう調整（旧 #b5652f は背景に対して 3.7〜4.3:1） */
+  --color-primary: #9f5727;
+  --color-primary-dark: #7c4320;
+  --color-muted: #706a61; /* 補助テキスト。旧 #8a8378 は 3.2〜3.5:1 */
   --color-alt-bg: #f1ece2;
   --color-border: #e2d9c9;
   --font-base: "Hiragino Sans", "Yu Gothic", "Meiryo", sans-serif;
@@ -184,7 +186,7 @@ body {
 .voice-card cite {
   display: block;
   text-align: right;
-  color: #8a8378;
+  color: var(--color-muted);
   font-style: normal;
 }
 
@@ -207,7 +209,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #8a8378;
+  color: var(--color-muted);
 }
 
 /* Contact form */
@@ -286,4 +288,26 @@ body {
   .access-grid {
     grid-template-columns: 1fr;
   }
+}
+
+/* キーボード操作の目印 */
+a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visible {
+  outline: 3px solid var(--color-primary-dark);
+  outline-offset: 2px;
+}
+
+.form-note {
+  margin: 0;
+  padding: 12px 14px;
+  border-radius: 8px;
+  background: var(--color-alt-bg);
+  border: 1px solid var(--color-border);
+  font-size: 0.9rem;
+}
+.form-note[hidden] { display: none; }
+
+html { scroll-behavior: smooth; }
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  * { transition: none !important; }
 }
