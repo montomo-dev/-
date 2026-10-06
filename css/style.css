@@ -1,7 +1,7 @@
 :root {
   --color-bg: #faf7f2;
   --color-text: #2e2b28;
-  --color-primary: #b5652f;
+  --color-primary: #a95e2c;
   --color-primary-dark: #8f4f24;
   --color-alt-bg: #f1ece2;
   --color-border: #e2d9c9;
@@ -184,7 +184,7 @@ body {
 .voice-card cite {
   display: block;
   text-align: right;
-  color: #8a8378;
+  color: #67615a;
   font-style: normal;
 }
 
@@ -207,7 +207,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #8a8378;
+  color: #67615a;
 }
 
 /* Contact form */
@@ -286,4 +286,10 @@ body {
   .access-grid {
     grid-template-columns: 1fr;
   }
+}
+
+.form-note {
+  margin: 12px 0 0;
+  font-size: 0.9rem;
+  color: var(--color-primary-dark);
 }
