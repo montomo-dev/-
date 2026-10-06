@@ -1,8 +1,8 @@
 :root {
   --color-bg: #faf7f2;
   --color-text: #2e2b28;
-  --color-primary: #b5652f;
-  --color-primary-dark: #8f4f24;
+  --color-primary: #a0592a;   /* 白・クリーム背景の上で4.5:1以上(旧#b5652fは4.0〜4.3) */
+  --color-primary-dark: #834a22;
   --color-alt-bg: #f1ece2;
   --color-border: #e2d9c9;
   --font-base: "Hiragino Sans", "Yu Gothic", "Meiryo", sans-serif;
@@ -11,6 +11,21 @@
 
 * {
   box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+:focus-visible {
+  outline: 3px solid var(--color-primary);
+  outline-offset: 2px;
 }
 
 body {
@@ -70,6 +85,8 @@ body {
   background: none;
   border: none;
   font-size: 1.5rem;
+  min-width: 44px;
+  min-height: 44px;
   cursor: pointer;
 }
 
@@ -184,7 +201,7 @@ body {
 .voice-card cite {
   display: block;
   text-align: right;
-  color: #8a8378;
+  color: #6f695f;
   font-style: normal;
 }
 
@@ -207,7 +224,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #8a8378;
+  color: #5e5850;
 }
 
 /* Contact form */
@@ -286,4 +303,11 @@ body {
   .access-grid {
     grid-template-columns: 1fr;
   }
+}
+
+.form-status {
+  margin: 0;
+  text-align: center;
+  color: var(--color-primary-dark);
+  font-weight: bold;
 }

@@ -19,10 +19,11 @@
       <a href="#access">アクセス</a>
       <a href="#contact">お問い合わせ</a>
     </nav>
-    <button class="nav-toggle" id="navToggle" aria-label="メニューを開く">☰</button>
+    <button class="nav-toggle" id="navToggle" aria-label="メニューを開く" aria-expanded="false" aria-controls="nav">☰</button>
   </div>
 </header>
 
+<main>
 <section class="hero">
   <div class="container hero-inner">
     <p class="hero-eyebrow">SAMPLE WEBSITE</p>
@@ -116,7 +117,7 @@
   <div class="container">
     <h2 class="section-title">お問い合わせ</h2>
     <p class="section-lead">ご予約・ご質問はお気軽にお問い合わせください。</p>
-    <form class="contact-form" onsubmit="return false;">
+    <form class="contact-form" id="contactForm">
       <label>
         お名前
         <input type="text" name="name" placeholder="山田 太郎">
@@ -130,9 +131,11 @@
         <textarea name="message" rows="5" placeholder="ご予約希望日時やご質問内容をご記入ください"></textarea>
       </label>
       <button type="submit" class="btn btn-primary">送信する(サンプルのため送信されません)</button>
+      <p class="form-status" id="formStatus" role="status"></p>
     </form>
   </div>
 </section>
+</main>
 
 <footer class="site-footer">
   <div class="container">
