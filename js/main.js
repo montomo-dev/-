@@ -4,7 +4,6 @@ const nav = document.getElementById("nav");
 function setNavOpen(open) {
   nav.classList.toggle("open", open);
   navToggle.setAttribute("aria-expanded", String(open));
-  navToggle.setAttribute("aria-label", open ? "メニューを閉じる" : "メニューを開く");
 }
 
 navToggle.addEventListener("click", () => {
@@ -22,5 +21,9 @@ const form = document.querySelector(".contact-form");
 const formNote = document.getElementById("formNote");
 form.addEventListener("submit", (e) => {
   e.preventDefault();
-  formNote.textContent = "これはホームページ制作のサンプルです。入力内容は送信・保存されません。";
+  // 同じ文言の再代入だと読み上げられないため、一度空にしてから表示する
+  formNote.textContent = "";
+  setTimeout(() => {
+    formNote.textContent = "これはホームページ制作のサンプルです。入力内容は送信・保存されません。";
+  }, 50);
 });
