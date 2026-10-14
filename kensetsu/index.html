@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex">
+<title>建設業向けホームページサンプル | 制作見本</title>
+<meta name="description" content="建設業・工事店向けの1ページホームページ制作サンプルです。">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="sample-bar" role="note">
+  これは公開情報をもとに作成した制作サンプルです。実際の公開ページではありません。
+</div>
+
+<header class="site-header">
+  <div class="container header-inner">
+    <div class="brand">
+      <span class="brand-name" data-field="name"></span>
+      <span class="brand-sub" data-field="business"></span>
+    </div>
+    <a class="header-cta" href="#contact">相談する</a>
+  </div>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="container">
+      <p class="hero-area" id="heroArea"></p>
+      <h1 id="heroCatch"></h1>
+      <p class="hero-lead" data-field="lead"></p>
+      <div class="hero-actions" id="heroActions"></div>
+    </div>
+  </section>
+
+  <section id="services" class="section">
+    <div class="container">
+      <h2 class="section-title"><span class="section-en">SERVICE</span>対応できる工事</h2>
+      <ul class="service-list" id="services-list"></ul>
+    </div>
+  </section>
+
+  <section id="works" class="section section-alt">
+    <div class="container">
+      <h2 class="section-title"><span class="section-en">WORKS</span>施工例</h2>
+      <ul class="work-list" id="works-list"></ul>
+    </div>
+  </section>
+
+  <section id="flow" class="section">
+    <div class="container">
+      <h2 class="section-title"><span class="section-en">FLOW</span>ご相談から工事までの流れ</h2>
+      <ol class="flow-list" id="flow-list"></ol>
+    </div>
+  </section>
+
+  <section id="area" class="section section-alt">
+    <div class="container">
+      <h2 class="section-title"><span class="section-en">AREA</span>対応地域</h2>
+      <p class="area-base">所在地：<span data-field="location"></span></p>
+      <ul class="area-list" id="area-list"></ul>
+    </div>
+  </section>
+
+  <section id="faq" class="section">
+    <div class="container">
+      <h2 class="section-title"><span class="section-en">FAQ</span>よくある質問</h2>
+      <dl class="faq-list" id="faq-list"></dl>
+    </div>
+  </section>
+
+  <section id="contact" class="section section-contact">
+    <div class="container">
+      <h2 class="section-title"><span class="section-en">CONTACT</span>ご相談窓口</h2>
+      <p class="contact-hours" id="contactHours"></p>
+      <div class="contact-actions" id="contactActions"></div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <p><span data-field="name"></span>（制作サンプル）</p>
+    <p class="footer-note">写真・文章は差し替え前の見本です。掲載内容は公開情報をもとにしています。</p>
+  </div>
+</footer>
+
+<div class="mobile-cta" id="mobileCta"></div>
+
+<script src="data.js"></script>
+<script src="render.js"></script>
+</body>
+</html>
