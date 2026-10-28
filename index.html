@@ -3,141 +3,81 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>お店のホームページサンプル | 制作見本</title>
-<meta name="description" content="小さなお店・個人事業主向けのホームページ制作サンプルです。">
+<title>灯台食堂｜架空の飲食店ホームページ制作見本</title>
+<meta name="description" content="架空の食堂「灯台食堂」を題材にしたホームページ制作見本です。店舗・メニュー・営業時間は実在しません。">
 <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+<a class="skip-link" href="#main">本文へ移動</a>
+<div class="demo-banner"><span aria-hidden="true">●</span> DESIGN SAMPLE / 架空のお店の制作見本です。実際の予約受付はありません。</div>
 
-<header class="site-header">
+<header class="site-header" id="top">
   <div class="container header-inner">
-    <div class="logo">〇〇店</div>
-    <nav class="nav" id="nav">
+    <a class="logo" href="#top" aria-label="灯台食堂 ページ先頭へ">灯台食堂 <small>TODAI SHOKUDO</small></a>
+    <nav class="nav" id="nav" aria-label="ページ内メニュー">
       <a href="#about">お店について</a>
       <a href="#menu">メニュー</a>
-      <a href="#voice">お客様の声</a>
-      <a href="#access">アクセス</a>
-      <a href="#contact">お問い合わせ</a>
+      <a href="#voice">店の情景</a>
+      <a href="#access">営業案内</a>
+      <a href="#contact">この見本について</a>
     </nav>
-    <button class="nav-toggle" id="navToggle" aria-label="メニューを開く">☰</button>
+    <button class="nav-toggle" id="navToggle" type="button" aria-label="メニューを開く" aria-controls="nav" aria-expanded="false">☰</button>
   </div>
 </header>
 
-<section class="hero">
+<main id="main">
+<section class="hero" aria-labelledby="hero-heading">
   <div class="container hero-inner">
-    <p class="hero-eyebrow">SAMPLE WEBSITE</p>
-    <h1>心をこめて、<br>あなたのための一皿を。</h1>
-    <p class="hero-lead">地元の食材を使った、あたたかい料理をご提供しています。</p>
-    <a href="#contact" class="btn btn-primary">お問い合わせはこちら</a>
+    <p class="hero-eyebrow">A LITTLE TABLE, EVERY DAY. <span> / SAMPLE 01</span></p>
+    <h1 id="hero-heading">いつもの一日に、<br><em>おいしい余白を。</em></h1>
+    <p class="hero-lead">夕方の光がテーブルに落ちるころ。<br>今日のごはんを食べに、少し寄り道。</p>
+    <div class="hero-actions"><a href="#menu" class="btn btn-primary">おしながきを見る <span aria-hidden="true">↗</span></a><a href="#about" class="hero-secondary">お店のものがたり →</a></div>
+    <p class="demo-caption">※ 登場する店舗と料理は、デザイン説明のための架空の設定です。</p>
+    <div class="hero-art" aria-hidden="true"><div class="hero-plate"><span>旬</span><small>SEASONAL<br>TABLE</small></div><span class="art-sticker">今日も、<br>いただきます。</span></div>
   </div>
 </section>
 
-<section id="about" class="section">
-  <div class="container">
-    <h2 class="section-title">お店について</h2>
-    <p class="section-lead">
-      2020年の開業以来、地域のお客様に愛される場所を目指してきました。
-      季節ごとの食材を活かした料理と、落ち着いた空間で、
-      特別な日にも、いつもの一日にも寄り添うお店です。
-    </p>
-    <div class="feature-grid">
-      <div class="feature-card">
-        <h3>こだわりの食材</h3>
-        <p>地元の生産者から仕入れた、新鮮な食材のみを使用しています。</p>
-      </div>
-      <div class="feature-card">
-        <h3>落ち着いた空間</h3>
-        <p>ゆったりとくつろげる、あたたかみのある内装です。</p>
-      </div>
-      <div class="feature-card">
-        <h3>丁寧な接客</h3>
-        <p>お一人お一人に、心を込めて対応いたします。</p>
-      </div>
+<section id="about" class="section section-about" aria-labelledby="about-heading">
+  <div class="container editorial-grid">
+    <div class="chapter">01 <span>ABOUT</span></div>
+    <div><p class="section-kicker">OUR LITTLE KITCHEN</p><h2 id="about-heading" class="section-title">いつか行きたくなる、<br>そんな食堂を想像して。</h2>
+      <p class="section-lead">これは架空の食堂の物語です。実際の制作では、お店で働く人の声や日常の写真を取材し、その店らしい言葉に置き換えます。</p>
+      <div class="story-lines"><p><span>01</span>毎日の定食に、ちょっとした季節。</p><p><span>02</span>急がなくてもいい、昼の時間。</p><p><span>03</span>帰り道に思い出す、ひと皿。</p></div>
     </div>
   </div>
 </section>
 
-<section id="menu" class="section section-alt">
-  <div class="container">
-    <h2 class="section-title">メニュー</h2>
+<section id="menu" class="section section-alt" aria-labelledby="menu-heading">
+  <div class="container"><p class="section-kicker">02 / MENU</p><h2 id="menu-heading" class="section-title">今日のおしながき。</h2>
+    <p class="sample-note">デモ用に考えた架空の料理・参考価格です。実際の販売はありません。</p>
     <div class="menu-grid">
-      <div class="menu-card">
-        <h3>本日のランチ</h3>
-        <p class="menu-price">¥1,200</p>
-        <p>日替わりのメイン料理とスープ、サラダ、ドリンク付き。</p>
-      </div>
-      <div class="menu-card">
-        <h3>季節のコース</h3>
-        <p class="menu-price">¥3,800</p>
-        <p>旬の食材を使った前菜からデザートまでの全5品。</p>
-      </div>
-      <div class="menu-card">
-        <h3>お持ち帰りセット</h3>
-        <p class="menu-price">¥1,500</p>
-        <p>ご自宅でも楽しめる、人気メニューの詰め合わせ。</p>
-      </div>
-    </div>
+      <article class="menu-card"><span class="menu-index">01</span><div><h3>季節の焼き魚定食</h3><p>ごはん、お味噌汁、日替わりの小鉢と。</p></div><p class="menu-price">¥1,200 <small>見本</small></p></article>
+      <article class="menu-card"><span class="menu-index">02</span><div><h3>台所のやさしい煮込み</h3><p>湯気の向こうに、いつもの味。</p></div><p class="menu-price">¥1,380 <small>見本</small></p></article>
+      <article class="menu-card"><span class="menu-index">03</span><div><h3>食後の小さなプリン</h3><p>コーヒーを飲みながら、もう少しだけ。</p></div><p class="menu-price">¥480 <small>見本</small></p></article>
+    </div><p class="menu-footnote">献立は季節とともに。 <span aria-hidden="true">✳</span></p>
   </div>
 </section>
 
-<section id="voice" class="section">
-  <div class="container">
-    <h2 class="section-title">お客様の声</h2>
-    <div class="voice-grid">
-      <blockquote class="voice-card">
-        <p>「料理はもちろん、店員さんの対応もとてもあたたかく、また来たいと思いました。」</p>
-        <cite>― 30代女性</cite>
-      </blockquote>
-      <blockquote class="voice-card">
-        <p>「季節のコースが本当に美味しくて感動しました。特別な日に利用しています。」</p>
-        <cite>― 40代男性</cite>
-      </blockquote>
-    </div>
+<section id="voice" class="section section-story" aria-labelledby="story-heading">
+  <div class="container story-layout"><p class="chapter">03 <span>SCENE</span></p><div><p class="section-kicker">THE HOURS BETWEEN</p><h2 id="story-heading" class="section-title">料理だけじゃない、<br>店の時間を伝えたい。</h2><p>口コミがまだないなら、架空の感想で埋めない。代わりに店内写真、店主の言葉、いつもの一皿を丁寧に届ける。このデザインでは、そのための余白を残しています。</p></div></div>
+</section>
+
+<section id="access" class="section section-alt" aria-labelledby="access-heading">
+  <div class="container access-grid">
+    <div><p class="section-kicker">04 / VISIT</p><h2 id="access-heading" class="section-title">お店に行く、その前に。</h2><p>実店舗のサイトには、正確な場所・営業時間・休業案内を目立つ場所に掲載します。</p></div>
+    <div class="access-info"><h3>営業案内のデザイン見本</h3><dl><div><dt>営業時間</dt><dd>11:30〜15:00 / 17:30〜21:00（架空）</dd></div><div><dt>定休日</dt><dd>水曜日（架空）</dd></div><div><dt>所在地</dt><dd>架空の店舗のため住所なし</dd></div></dl><p class="sample-note">実在する住所・電話番号・地図へのリンクはありません。</p></div>
   </div>
 </section>
 
-<section id="access" class="section section-alt">
-  <div class="container">
-    <h2 class="section-title">アクセス</h2>
-    <div class="access-grid">
-      <div class="access-info">
-        <p><strong>住所</strong><br>〇〇県〇〇市〇〇 1-2-3</p>
-        <p><strong>営業時間</strong><br>11:00〜15:00 / 17:00〜22:00(月曜定休)</p>
-        <p><strong>電話番号</strong><br>000-0000-0000</p>
-      </div>
-      <div class="access-map">
-        <p>地図はこちらに表示されます</p>
-      </div>
-    </div>
-  </div>
+<section id="contact" class="section section-contact" aria-labelledby="contact-heading">
+  <div class="container contact-layout"><div><p class="section-kicker">ABOUT THIS SAMPLE</p><h2 id="contact-heading" class="section-title">本物のお店には、<br>本物の言葉を。</h2></div><div><p>これは店舗向けホームページの制作見本です。架空の「お客様の声」や送信できないフォームは置かず、実際に確認できた情報だけを公開する設計にしました。</p><a class="contact-return" href="#top">ページの先頭に戻る ↑</a></div></div>
 </section>
-
-<section id="contact" class="section">
-  <div class="container">
-    <h2 class="section-title">お問い合わせ</h2>
-    <p class="section-lead">ご予約・ご質問はお気軽にお問い合わせください。</p>
-    <form class="contact-form" onsubmit="return false;">
-      <label>
-        お名前
-        <input type="text" name="name" placeholder="山田 太郎">
-      </label>
-      <label>
-        メールアドレス
-        <input type="email" name="email" placeholder="example@example.com">
-      </label>
-      <label>
-        お問い合わせ内容
-        <textarea name="message" rows="5" placeholder="ご予約希望日時やご質問内容をご記入ください"></textarea>
-      </label>
-      <button type="submit" class="btn btn-primary">送信する(サンプルのため送信されません)</button>
-    </form>
-  </div>
-</section>
+</main>
 
 <footer class="site-footer">
   <div class="container">
     <p>※このサイトはホームページ制作サンプルです。実在の店舗・情報ではありません。</p>
-    <p>&copy; 2026 Homepage Sample</p>
+    <p>&copy; 2026 灯台食堂 / Homepage Design Sample</p>
   </div>
 </footer>
 
